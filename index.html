@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      href="resources/favicon.ico"
+      type="image/x-icon"
+      sizes="96x96"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Device Shop Checkout | devChallenges.io</title>
+
+    <!--You are welcome to delete these styles or modify them in your own stylesheet -->
+  </head>
+  <body>
+    <div class="h-head">
+      <img class="img-header" src="./resources/background-image.png" alt="" />
+      <div class="t-header">
+        <h1>Checkout</h1>
+        <span id="it_3"><p>3 ITEMS</p></span>
+      </div>
+
+      <!-- The whole body div -->
+      <div class="big_flex">
+        <!-- The first div for left side -->
+        <div class="left_side">
+          <!-- the div for upper left side -->
+          <div>
+            <!-- the div iphone -->
+            <div class="prod_flex">
+              <div class="inner_flex">
+                <div class="prod_img prod_img_center">
+                  <img src="./resources/Gold.png" alt="" />
+                </div>
+                <div>
+                  <h1 class="prod_title">iPhone 12 Pro</h1>
+                  <p class="prod_text mt_2">Golden</p>
+                  <p class="prod_text mt_30">x 1</p>
+                </div>
+              </div>
+              <div class="price_flex">
+                <h1 class="prod_title">$999.00</h1>
+                <img class="mt_svg" src="./resources/close-icon.svg" alt="" />
+              </div>
+            </div>
+
+            <!-- for the watch -->
+            <div class="prod_flex">
+              <div class="inner_flex">
+                <div class="prod_img prod_img_center">
+                  <img src="./resources/Apple-watch.png" alt="" />
+                </div>
+                <div>
+                  <h1 class="prod_title">Apple Watch</h1>
+                  <p class="prod_text mt_2">Blue</p>
+                  <p class="prod_text mt_30">x 1</p>
+                </div>
+              </div>
+              <div class="price_flex">
+                <h1 class="prod_title">$399.00</h1>
+                <img class="mt_svg" src="./resources/close-icon.svg" alt="" />
+              </div>
+            </div>
+
+            <!-- for the mac -->
+            <div class="prod_flex upper_left">
+              <div class="inner_flex">
+                <div class="prod_img prod_img_center">
+                  <img src="./resources/iMac.png" alt="" />
+                </div>
+                <div>
+                  <h1 class="prod_title">iMac</h1>
+                  <p class="prod_text mt_2">Green</p>
+                  <p class="prod_text mt_30">x 1</p>
+                </div>
+              </div>
+              <div class="price_flex">
+                <h1 class="prod_title">$1199.00</h1>
+                <img class="mt_svg" src="./resources/close-icon.svg" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <!-- bottom left side -->
+          <div class="pt_2">
+            <div>
+              <input
+                type="text"
+                name=""
+                id="coupon_code"
+                placeholder="Enter Coupon code"
+              />
+              <button id="coup_btn">Apply Coupon</button>
+            </div>
+
+            <div class="prod_flex">
+              <div>
+                <p class="prod_text pt_text" id="text_b">Sub total</p>
+                <p class="prod_text pt_text" id="text_b">Tax</p>
+                <p class="prod_title pt_text" id="text_b">Total</p>
+              </div>
+
+              <div class="price_flex">
+                <p class="prod_text pt_text" id="text_b">$2597.00</p>
+                <p class="prod_text pt_text" id="text_b">$623.28</p>
+                <p class="prod_title pt_text" id="text_b">$3220.28</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- The right side now -->
+        <div class="right_side">
+          <h1 class="prod_title">Contact Information</h1>
+          <fieldset class="pt_text">
+            <legend class="pt_textr">First & Last name</legend>
+            <input
+              type="text"
+              name=""
+              id="pl_2"
+              placeholder="Enter First & Last name"
+            />
+          </fieldset>
+
+          <fieldset class="pt_text">
+            <legend class="pt_textr">Email Address</legend>
+            <input
+              type="email"
+              name=""
+              id="pl_2"
+              placeholder="Enter Email Address"
+            />
+          </fieldset>
+
+          <div class="field_flex">
+            <fieldset class="pt_text">
+              <legend class="pt_textr">Country</legend>
+              <select name="Country" id="pl_7">
+                <option value="">Finland</option>
+                <option value="">Nigeria</option>
+                <option value="">America</option>
+              </select>
+            </fieldset>
+
+            <fieldset class="pt_text">
+              <legend class="pt_textr">Postal Code</legend>
+              <input
+                type="text"
+                name=""
+                id="pl_7"
+                placeholder="Enter First & Last name"
+              />
+            </fieldset>
+          </div>
+
+          <button class="rightBtn">Continue</button>
+        </div>
+      </div>
+    </div>
+    <!--         
+    Contact Information
+    
+    First & Last name
+    
+    Enter first & last name
+    
+    Email Address
+    
+    Enter email address
+    
+    Country
+    
+    Finland
+    
+    Postal Code
+    
+    00270
+    
+    Continue
+     -->
+
+    <div class="author-info">
+      Coded by <a href="#">Ayodeji Adeyemo</a> | Challenge by
+      <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
+        >devChallenges.io</a
+      >.
+    </div>
+  </body>
+</html>
